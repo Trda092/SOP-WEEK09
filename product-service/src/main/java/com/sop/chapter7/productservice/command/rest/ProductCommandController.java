@@ -1,4 +1,4 @@
-package com.sop.chapter7.productservice.rest;
+package com.sop.chapter7.productservice.command.rest;
 
 import com.sop.chapter7.productservice.command.CreateProductCommand;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,12 +9,12 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping("/products")
-public class ProductController {
+public class ProductCommandController {
 
     private final CommandGateway commandGateway;
 
     @Autowired
-    public ProductController(CommandGateway commandGateway){
+    public ProductCommandController(CommandGateway commandGateway){
         this.commandGateway = commandGateway;
     }
 

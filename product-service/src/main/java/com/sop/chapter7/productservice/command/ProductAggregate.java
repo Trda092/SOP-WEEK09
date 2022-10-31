@@ -1,5 +1,5 @@
 package com.sop.chapter7.productservice.command;
-import com.sop.chapter7.productservice.event.ProductCreatedEvent;
+import com.sop.chapter7.productservice.core.event.ProductCreatedEvent;
 import org.axonframework.commandhandling.CommandHandler;
 import org.axonframework.eventsourcing.EventSourcingHandler;
 import org.axonframework.modelling.command.AggregateIdentifier;
